@@ -1,0 +1,120 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.hide {
+    display: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    background-image: linear-gradient(#00004e, #a875ff);
+    background-attachment: fixed;
+}
+
+.container {
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2.5px 2.5px 10px #1b004b;
+}
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        width: 75%;
+        margin: 10% 0;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .container {
+        width: 30%;
+        margin: 10% 5%;
+    }
+}
+
+button {
+    width: 65px;
+    height: 65px;
+    margin: 5% 2%;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+button:hover:enabled {
+    background-color: #1b004b;
+    border-color: #1b004b;
+
+}
+
+button:disabled {
+    border-color: #a875ff;
+    color: #a875ff;
+    cursor: default;
+}
+
+/* Timer */
+.time {
+    margin: 10% 0;
+    font-size: 50px;
+}
+
+/* Laps */
+#clearLaps {
+    width: 150px;
+    height: 50px;
+}
+
+.lap-track {
+    height: 200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-color: #1b004b;
+}
+
+.lap-item {
+    list-style: none;
+    font-size: 24px;
+    padding: 15px;
+}
+
+.number {
+    color: #c09efb;
+}
+
+.lap {
+    color: #fff;
+    font-weight: 500;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1b004b8c;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1b004b;
+}
